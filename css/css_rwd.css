@@ -1,4 +1,71 @@
 @import "css_rwd_common.css";
+.commonBanner {
+  display: block;
+  text-align: center;
+}
+.commonBanner img {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  transition: 0.3s all ease-in-out;
+}
+
+.noidung {
+  padding: 0;
+}
+.noidung a:hover {
+  color: #007ed9 !important;
+}
+
+.openSub {
+  display: none;
+}
+
+.openList {
+  display: none;
+}
+
+.name:hover {
+  color: #007ed9 !important;
+}
+
+.imageRatio {
+  aspect-ratio: var(--ratio);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+#bttop {
+  position: fixed;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  font-size: 1.5625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #ccc;
+  border-radius: 0.25rem;
+  line-height: 2.5rem;
+  text-align: center;
+  z-index: 10;
+  display: none;
+  transition: none;
+}
+#bttop:hover {
+  text-decoration: none;
+  background: #007ed9;
+  color: #fff;
+}
+
+.openList,
+.openSub,
+.btn_divSearchPage {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .openList {
     display: block;

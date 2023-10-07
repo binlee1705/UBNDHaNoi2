@@ -120,17 +120,17 @@ $(document).ready(() => {
     var $filter = $(this).next(".formFilter");
     $filter.toggleClass("ac");
   });
-  $(".marquee").marquee({
-    duration: 30000,
-    gap: 5,
+  $(".newsHot-right .group").marquee({
+    duration: 20000,
+    gap: 0,
     delayBeforeStart: 0,
-    direction: "left",
+    direction: "up",
     duplicated: true,
     pauseOnHover: true,
     startVisible: true,
   });
 
-  $("#slideMain .group").each(function () {
+  $("#newsHot .newsHot-left .group").each(function () {
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
@@ -139,92 +139,53 @@ $(document).ready(() => {
         true,
         false,
         [1, 1, 1, 1, 1],
-        "fadeIn",
-        "fadeOut"
-      )
-    );
-  });
-  $(".mediaHome .group").each(function () {
-    $(this).owlCarousel(
-      owlslide(
-        $(this).find(">*").length,
-        [30, 20, 20, 20, 20, 20],
-        true,
-        true,
-        true,
-        [2, 2, 2, 2, 1],
         "",
         ""
       )
     );
   });
-  $(".commonSlideBanner").each(function () {
-    var checkInside = $(this).parents("#container").hasClass("inside");
+  $(".commonSlideBanner ").each(function () {
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
-        [10, 10, 20, 20, 20, 10],
+        [10, 10, 10, 10, 10, 10],
         true,
-        true,
-        true,
-        [1, checkInside ? 3 : 1, 2, 2, 1],
+        false,
+        false,
+        [1, 1, 1, 1, 1],
         "fadeIn",
         "fadeOut"
       )
     );
   });
-  $("#session .tab").each(function () {
+  $("#galleryRight .group ").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [10, 10, 10, 10, 10, 10],
+        true,
+        false,
+        false,
+        [1, 1, 1, 1, 1],
+        "",
+        ""
+      )
+    );
+  });
+  $("#galleryHome .group").each(function () {
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
         [0, 0, 0, 0, 0, 0],
         true,
-        true,
-        true,
-        [4, 3, 2, 2, 1],
+        false,
+        false,
+        [5, 5, 5, 5, 5],
         "",
         ""
       )
     );
   });
-  $("#news.detail .other .tab-contents .owl-carousel").each(function () {
-    $(this).owlCarousel(
-      owlslide(
-        $(this).find(">*").length,
-        [15, 15, 15, 15, 15, 15],
-        true,
-        true,
-        true,
-        [4, 4, 3, 3, 2],
-        "",
-        ""
-      )
-    );
-  });
-  $("#donors .owl-carousel").each(function () {
-    $(this).owlCarousel(
-      owlslide(
-        $(this).find(">*").length,
-        [20, 20, 20, 20, 20, 20],
-        true,
-        true,
-        true,
-        [5, 4, 3, 3, 2],
-        "",
-        ""
-      )
-    );
-  });
-  $(".btnSearchPage").click(function () {
-    if ($(this).hasClass("active")) {
-      $("#menu .divSearchPage").slideUp();
-    } else {
-      $("#menu .divSearchPage").slideDown();
-    }
-    $(this).toggleClass("active");
-  });
-
-  loadPageFacebook();
 });
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
@@ -235,22 +196,8 @@ $(window).scroll(function () {
   }
 });
 
-$(window).resize(function () {
-  loadPageFacebook();
-});
+$(window).resize(function () {});
 
-function loadPageFacebook() {
-  var container_width = $("#pluginShare .facebook").width();
-  $("#pageFacebook")
-    .html(`<div class="fb-page" data-href="https://www.facebook.com/Vietsports2020" data-tabs="timeline" data-width="${container_width}"
-          data-height="570" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-          data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/Vietsports2020" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/Vietsports2020">Vietsports</a>
-          </blockquote>
-        </div>`);
-  FB.XFBML.parse();
-}
 function preventScroll(e) {
   e.preventDefault();
   e.stopPropagation();
