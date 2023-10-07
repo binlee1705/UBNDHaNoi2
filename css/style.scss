@@ -544,15 +544,21 @@ header {
       overflow: auto;
       table {
         tbody {
-          td {
-            padding: 15px;
-            vertical-align: top;
-            &:first-child {
-              white-space: nowrap;
+          tr {
+            cursor: pointer;
+            td {
+              padding: 15px;
+              vertical-align: top;
+              &:first-child {
+                white-space: nowrap;
+              }
+              strong {
+                display: block;
+                white-space: nowrap;
+              }
             }
-            strong {
-              display: block;
-              white-space: nowrap;
+            &:hover {
+              color: $color-hover;
             }
           }
         }

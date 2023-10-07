@@ -1648,16 +1648,22 @@ header .wrp .logo .text {
   /* Handle */
   /* Handle on hover */
 }
-#documentHome .parent .table-responsive table tbody td {
+#documentHome .parent .table-responsive table tbody tr {
+  cursor: pointer;
+}
+#documentHome .parent .table-responsive table tbody tr td {
   padding: 15px;
   vertical-align: top;
 }
-#documentHome .parent .table-responsive table tbody td:first-child {
+#documentHome .parent .table-responsive table tbody tr td:first-child {
   white-space: nowrap;
 }
-#documentHome .parent .table-responsive table tbody td strong {
+#documentHome .parent .table-responsive table tbody tr td strong {
   display: block;
   white-space: nowrap;
+}
+#documentHome .parent .table-responsive table tbody tr:hover {
+  color: #007ed9;
 }
 #documentHome .parent .table-responsive::-webkit-scrollbar {
   width: 10px;
