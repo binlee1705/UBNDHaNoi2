@@ -459,6 +459,7 @@ header {
     gap: 12px;
     flex-direction: column;
     li {
+      position: relative;
       a {
         border-radius: 4px;
         background: linear-gradient(180deg, #ebf5ff 0%, #d7ebff 100%);
@@ -489,7 +490,36 @@ header {
         }
       }
       ul {
+        @extend %ul;
         display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        top: 100%;
+        li {
+          a {
+            background: #fff;
+            font-family: Roboto Slab;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 16px 24px;
+            color: rgba(0, 32, 77, 0.9);
+            border-bottom: 1px solid #e0e0e0;
+            border-radius: 0;
+            &:hover {
+              background: rgba(241, 248, 255, 1);
+            }
+          }
+        }
+      }
+      &:hover {
+        > ul {
+          display: block;
+        }
       }
     }
   }
