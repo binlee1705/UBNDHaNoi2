@@ -186,6 +186,16 @@ $(document).ready(() => {
       )
     );
   });
+
+  $(".voteStar span").hover(function () {
+    var pa = $(this).parents(".voteStar");
+    var index = $(this).index() + 1;
+    $(".voteStar span").removeClass("active");
+    for (var i = 0; i < index; i++) {
+      pa.find("span").eq(i).addClass("active");
+    }
+    pa.find(".starPoint").val(index);
+  });
 });
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
