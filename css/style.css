@@ -2255,6 +2255,9 @@ footer .wrp .right .contact .statistical {
   text-transform: uppercase;
   text-align: center;
 }
+#leader .leader_right .group .bound .item .info .name:hover {
+  color: #fff !important;
+}
 #leader .leader_right .group .bound .item .info .position {
   text-align: justify;
   font-family: Roboto Slab;
@@ -2263,4 +2266,7 @@ footer .wrp .right .contact .statistical {
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+}
+#leader .leader_right .group .bound .item:hover img {
+  filter: brightness(1.1);
 }/*# sourceMappingURL=style.css.map */

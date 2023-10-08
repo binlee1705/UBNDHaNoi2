@@ -1178,6 +1178,9 @@ footer {
               line-height: 25px;
               text-transform: uppercase;
               text-align: center;
+              &:hover {
+                color: #fff !important;
+              }
             }
             .position {
               text-align: justify;
@@ -1187,6 +1190,11 @@ footer {
               font-weight: 400;
               line-height: 24px;
               text-align: center;
+            }
+          }
+          &:hover {
+            img {
+              filter: brightness(1.1);
             }
           }
         }
