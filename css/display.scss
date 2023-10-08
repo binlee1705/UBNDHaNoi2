@@ -952,8 +952,13 @@ span {
 .noidung {
   width: 100%;
   min-height: 100px;
+  color: #000;
   text-align: justify;
-  line-height: ptr(24);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
   * {
     max-width: 100%;
   }
