@@ -1301,4 +1301,58 @@ footer {
       }
     }
   }
+  &.detail {
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #e0e0e0;
+    padding: 24px;
+    .title {
+      font-family: Roboto Slab;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px;
+      padding: 20px 0;
+      margin-bottom: 16px;
+    }
+    .content {
+      .item {
+        display: flex;
+        padding: 16px 0;
+        border-top: 1px solid #e0e0e0;
+        .left {
+          width: 278px;
+        }
+        .right {
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .link {
+            font-family: Roboto Slab;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+          .btnDownload {
+            border-radius: 4px;
+            background: rgba(0, 126, 217, 1);
+            color: #fff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            display: inline-block;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &:hover {
+              filter: brightness(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
 }
