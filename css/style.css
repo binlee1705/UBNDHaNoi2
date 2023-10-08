@@ -2100,4 +2100,167 @@ footer .wrp .right .contact .statistical {
   line-height: 16px;
   margin-top: 8px;
   color: rgba(0, 32, 77, 0.4);
+}
+
+#leader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#leader .leader_left {
+  width: 27.8787878788%;
+}
+#leader .leader_left .cateRight > ul li {
+  padding: 14px 24px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #ebf5ff 0%, #d7ebff 100%);
+  box-shadow: 0px 2px 2px 0px rgba(65, 122, 147, 0.25);
+}
+#leader .leader_left .cateRight > ul li > a {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 6px 0;
+}
+#leader .leader_left .cateRight > ul li ul {
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+#leader .leader_left .cateRight > ul li ul li {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+#leader .leader_left .cateRight > ul li ul li a {
+  border: none;
+  padding: 6px 16px;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#leader .leader_left .cateRight > ul li ul li a::before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-weight: 900;
+  font-size: 5px;
+  margin-right: 10px;
+}
+#leader .leader_left .cateRight > ul > li.active {
+  background: linear-gradient(180deg, #5fafff 0%, #007ed9 100%);
+}
+#leader .leader_left .cateRight > ul > li.active a {
+  color: #fff;
+}
+#leader .leader_left .cateRight > ul > li.active a > span:first-child:before {
+  background: #fff;
+}
+#leader .leader_left .cateRight > ul > li.active a.active {
+  color: #073676;
+}
+#leader .leader_left .head {
+  background: url(../pic/bg_lead_left_head.png) center top no-repeat;
+  height: 173px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+#leader .leader_left .head .info {
+  width: 90%;
+  border-radius: 4px 100px 0px 4px;
+  padding: 22px 0 15px 14px;
+  background: #007ed9;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  height: 95px;
+}
+#leader .leader_left .head .info .name {
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#leader .leader_left .head .info .name:hover {
+  color: #fff !important;
+}
+#leader .leader_left .head .info img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+}
+#leader .leader_right {
+  background: url(../pic/bg_position.png) center no-repeat, #ecf5ff;
+  width: 69.3939393939%;
+  padding: 40px;
+}
+#leader .leader_right .title {
+  text-align: center;
+  font-family: Roboto Slab;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+#leader .leader_right .group .bound {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#leader .leader_right .group .bound .item {
+  border-radius: 8px 8px 4px 4px;
+  overflow: hidden;
+  width: calc((100% - 48px) / 4);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+#leader .leader_right .group .bound .item .image {
+  background: #afd9ff;
+  padding-top: 20px;
+}
+#leader .leader_right .group .bound .item .image img {
+  width: 100%;
+}
+#leader .leader_right .group .bound .item .info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
+  background: linear-gradient(180deg, #5fafff 0%, #007ed9 100%);
+  flex: 1;
+}
+#leader .leader_right .group .bound .item .info .name {
+  font-family: Roboto Slab;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#leader .leader_right .group .bound .item .info .position {
+  text-align: justify;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
