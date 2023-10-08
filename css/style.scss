@@ -1202,3 +1202,103 @@ footer {
     }
   }
 }
+
+#document {
+  &.list {
+    .documentFormSearch {
+      padding: 24px 32px;
+      margin-bottom: 25px;
+      background: #f1f8ff;
+      .title {
+        color: #007ed9;
+        font-family: Roboto Slab;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .group {
+        display: flex;
+        width: 100%;
+        gap: 16px;
+        align-items: flex-end;
+        .item {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          font-family: Roboto Slab;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          input,
+          select {
+            font-size: 14px;
+            height: 40px;
+          }
+        }
+        .btnSearch {
+          height: 40px;
+          padding: 0 24px;
+          display: flex;
+          align-items: center;
+          border-radius: 4px;
+          color: #fff;
+          background: #007ed9;
+          &:hover {
+            filter: brightness(1.2);
+          }
+        }
+      }
+    }
+    .table {
+      table-layout: fixed;
+      thead {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: #f1f8ff;
+        color: rgba(0, 126, 217, 1);
+        th {
+          white-space: nowrap;
+        }
+      }
+      tr {
+        th,
+        td {
+          padding: 16px 8px;
+        }
+        &:hover {
+          color: rgba(0, 126, 217, 1);
+        }
+      }
+      .success {
+        border-radius: 100px;
+        background: rgba(232, 247, 239, 1);
+        color: rgba(57, 172, 109, 1);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 0 16px;
+        line-height: 24px;
+        display: block;
+        text-align: center;
+      }
+      .btnDownload {
+        color: #007ed9;
+        font-family: Roboto Slab;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+}
