@@ -151,6 +151,17 @@ img {
     font-size: 18px;
     padding: 10px 0;
   }
+  #leader .leader_right {
+    padding: 20px;
+  }
+  #leader .leader_right .title {
+    font-size: 21px;
+    line-height: 30px;
+    width: 100%;
+  }
+  #document .pagging {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 991px) {
   #container .wrp .container {
@@ -206,6 +217,29 @@ img {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+  }
+  #leader {
+    flex-direction: column-reverse;
+  }
+  #leader .leader_left {
+    width: 100%;
+  }
+  #leader .leader_right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #document.list .documentFormSearch .group {
+    flex-wrap: wrap;
+  }
+  #document.list .documentFormSearch .group .item {
+    width: calc((100% - 32px) / 3);
+    flex: none;
+  }
+  #document.list .table tr th:nth-child(3) {
+    width: 400px;
+  }
+  #document.detail .content .item .left {
+    width: 200px;
   }
 }
 @media (max-width: 991px) and (min-width: 480px) {
@@ -357,12 +391,76 @@ img {
     line-height: 28px;
     font-weight: 600;
   }
+  #news.detail .attachments .item {
+    flex-direction: column;
+  }
+  #news.detail .attachments .item .title {
+    display: none;
+  }
+  #news.detail .attachments .item:first-child .title {
+    display: block;
+  }
+  #news.detail .attachments .item .attachments_name {
+    flex-direction: column;
+    gap: 0;
+  }
+  #news.detail .otherNews .group {
+    gap: 20px;
+  }
+  #news.detail .otherNews .group .item {
+    width: calc((100% - 20px) / 2);
+  }
+  #news.detail .moreNews .listData .item {
+    flex-direction: column;
+  }
+  #news.detail .moreNews .listData .item .image {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
   .pagging {
     flex-direction: column;
     gap: 10px;
   }
   .pagging ul + span {
     display: none;
+  }
+  .commonTitle {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  #leader .leader_right {
+    padding: 20px;
+  }
+  #leader .leader_right .title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #leader .leader_right .group .bound .item {
+    width: 90%;
+  }
+  #document.list .documentFormSearch {
+    padding: 15px;
+  }
+  #document.list .documentFormSearch .group {
+    flex-wrap: wrap;
+  }
+  #document.list .documentFormSearch .group .item {
+    width: calc((100% - 16px) / 2);
+    flex: none;
+  }
+  #document.detail .content .item {
+    gap: 5px;
+    flex-direction: column;
+  }
+  #document.detail .content .item > * {
+    width: 100%;
+  }
+  #document.detail .content .item .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
 @media (max-width: 320px) {
