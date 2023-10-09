@@ -2567,6 +2567,8 @@ footer .wrp .right .contact .statistical {
 }
 #survey.detail .resultSurvey {
   margin-top: 24px;
+  max-width: 100%;
+  overflow: hidden;
 }
 #survey.detail .resultSurvey .title {
   font-weight: 500;

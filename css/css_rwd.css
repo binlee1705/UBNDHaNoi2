@@ -241,6 +241,22 @@ img {
   #document.detail .content .item .left {
     width: 200px;
   }
+  #survey.form .formSurvey .col-md-2 {
+    white-space: nowrap;
+    width: 20%;
+  }
+  #survey.form .formSurvey .col-md-4 {
+    width: 30%;
+  }
+  #survey.form .formSurvey .col-md-10 {
+    width: 80%;
+  }
+  #survey.detail .contentSurvey .item {
+    gap: 20px;
+  }
+  #survey.detail .contentSurvey .item .label {
+    width: 240px;
+  }
 }
 @media (max-width: 991px) and (min-width: 480px) {
   #container .wrp .container .colRight .commonBanner {
@@ -461,6 +477,39 @@ img {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+  #survey.form .description {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #survey.form .formSurvey .row {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  #survey.form .formSurvey .row .col-md-2,
+  #survey.form .formSurvey .row .col-md-4,
+  #survey.form .formSurvey .row .col-md-10 {
+    width: 100%;
+  }
+  #survey.form .formSurvey .row .capcha {
+    flex-direction: column;
+  }
+  #survey.form .formSurvey .row .capcha > *,
+  #survey.form .formSurvey .row .capcha .btnSubmitForm {
+    width: 100%;
+    text-align: center;
+  }
+  #survey.detail .contentSurvey .item {
+    gap: 5px;
+    flex-direction: column;
+  }
+  #survey.detail .contentSurvey .item .label {
+    width: 100%;
+  }
+  #survey.detail .contentSurvey .item .value {
+    width: 100%;
+    flex: none;
   }
 }
 @media (max-width: 320px) {

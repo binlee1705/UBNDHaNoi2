@@ -1514,6 +1514,8 @@ footer {
     }
     .resultSurvey {
       margin-top: 24px;
+      max-width: 100%;
+      overflow: hidden;
       .title {
         font-weight: 500;
         text-transform: uppercase;

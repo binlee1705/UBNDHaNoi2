@@ -218,6 +218,32 @@
       }
     }
   }
+  #survey {
+    &.form {
+      .formSurvey {
+        .col-md-2 {
+          white-space: nowrap;
+          width: 20%;
+        }
+        .col-md-4 {
+          width: 30%;
+        }
+        .col-md-10 {
+          width: 80%;
+        }
+      }
+    }
+    &.detail {
+      .contentSurvey {
+        .item {
+          gap: 20px;
+          .label {
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) and (min-width: 480px) {
@@ -508,6 +534,49 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 10px;
+          }
+        }
+      }
+    }
+  }
+  #survey {
+    &.form {
+      .description {
+        padding: 20px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .formSurvey {
+        .row {
+          gap: 10px;
+          margin-bottom: 10px;
+          .col-md-2,
+          .col-md-4,
+          .col-md-10 {
+            width: 100%;
+          }
+          .capcha {
+            flex-direction: column;
+            > *,
+            .btnSubmitForm {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    &.detail {
+      .contentSurvey {
+        .item {
+          gap: 5px;
+          flex-direction: column;
+          .label {
+            width: 100%;
+          }
+          .value {
+            width: 100%;
+            flex: none;
           }
         }
       }
