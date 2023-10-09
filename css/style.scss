@@ -1367,6 +1367,7 @@ footer {
 #survey {
   &.form {
     width: 968px;
+    max-width: 100%;
     margin: auto;
     margin-top: 20px;
     .description {
