@@ -162,11 +162,11 @@ $(document).ready(() => {
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
-        [10, 10, 10, 10, 10, 10],
+        [10, 10, 30, 30, 10, 10],
         true,
         false,
         false,
-        [1, 1, 1, 1, 1],
+        [1, 1, 2, 2, 1],
         "",
         ""
       )
@@ -180,7 +180,7 @@ $(document).ready(() => {
         true,
         false,
         false,
-        [5, 5, 5, 5, 5],
+        [5, 4, 3, 3, 2],
         "",
         ""
       )

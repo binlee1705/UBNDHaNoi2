@@ -150,6 +150,9 @@ header {
     .language {
       @extend %ul;
       height: 32px;
+      li {
+        background: #fff;
+      }
       li:not(.active) {
         display: none;
       }
@@ -694,6 +697,7 @@ footer {
           font-weight: 500;
           line-height: 38px;
           margin-top: 6px;
+          white-space: nowrap;
         }
         .statistical {
           color: #fff;

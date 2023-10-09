@@ -1291,6 +1291,9 @@ header .wrp .logo .text {
 .menu .wrp .language {
   height: 32px;
 }
+.menu .wrp .language li {
+  background: #fff;
+}
 .menu .wrp .language li:not(.active) {
   display: none;
 }
@@ -1789,6 +1792,7 @@ footer .wrp .right .contact .hotline {
   font-weight: 500;
   line-height: 38px;
   margin-top: 6px;
+  white-space: nowrap;
 }
 footer .wrp .right .contact .statistical {
   color: #fff;
