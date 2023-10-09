@@ -194,6 +194,17 @@ $(document).ready(() => {
     for (var i = 0; i < index; i++) {
       pa.find("span").eq(i).addClass("active");
     }
+  }, function () {
+    var pa = $(this).parents(".voteStar");
+    var index = pa.find(".starPoint").val();
+    $(".voteStar span").removeClass("active");
+    for (var i = 0; i < index; i++) {
+      pa.find("span").eq(i).addClass("active");
+    }
+  });
+  $(".voteStar span").click(function () {
+    var pa = $(this).parents(".voteStar");
+    var index = $(this).index() + 1;
     pa.find(".starPoint").val(index);
   });
 });
@@ -206,7 +217,7 @@ $(window).scroll(function () {
   }
 });
 
-$(window).resize(function () {});
+$(window).resize(function () { });
 
 function preventScroll(e) {
   e.preventDefault();
@@ -224,20 +235,20 @@ function Increasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function Decreasenoidung() {
@@ -246,20 +257,20 @@ function Decreasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function Resetnoidung() {
@@ -268,20 +279,20 @@ function Resetnoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function fullSrceenIframe() {

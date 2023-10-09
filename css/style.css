@@ -1170,6 +1170,9 @@ body {
 
 header {
   background: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 333px;
   display: flex;
   align-items: center;
@@ -2417,12 +2420,12 @@ footer .wrp .right .contact .statistical {
   filter: brightness(1.2);
 }
 
-#survey {
+#survey.form {
   width: 968px;
   margin: auto;
   margin-top: 20px;
 }
-#survey .description {
+#survey.form .description {
   padding: 36px;
   background: #f1f8ff;
   color: #000;
@@ -2434,29 +2437,29 @@ footer .wrp .right .contact .statistical {
   line-height: 28px;
   margin-bottom: 40px;
 }
-#survey .formSurvey .row {
+#survey.form .formSurvey .row {
   margin-bottom: 20px;
   align-items: center;
 }
-#survey .formSurvey .row span {
+#survey.form .formSurvey .row span {
   font-weight: 500;
   font-size: 15px;
 }
-#survey .formSurvey .row span.cred {
+#survey.form .formSurvey .row span.cred {
   font-weight: normal;
 }
-#survey .formSurvey .row .capcha {
+#survey.form .formSurvey .row .capcha {
   gap: 14px;
   display: flex;
 }
-#survey .formSurvey .row .capcha .inputCapcha {
+#survey.form .formSurvey .row .capcha .inputCapcha {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 14px;
 }
-#survey .formSurvey .row .capcha .btnSubmitForm {
+#survey.form .formSurvey .row .capcha .btnSubmitForm {
   font-family: Roboto Slab;
   font-size: 16px;
   font-style: normal;
@@ -2469,10 +2472,10 @@ footer .wrp .right .contact .statistical {
   display: block;
   background: #007ed9;
 }
-#survey .formSurvey .row .capcha .btnSubmitForm:hover {
+#survey.form .formSurvey .row .capcha .btnSubmitForm:hover {
   filter: brightness(1.2);
 }
-#survey .formSurvey .row .note {
+#survey.form .formSurvey .row .note {
   margin-top: 20px;
   font-family: Roboto Slab;
   font-size: 14px;
@@ -2480,8 +2483,145 @@ footer .wrp .right .contact .statistical {
   font-weight: 400;
   line-height: 24px;
 }
-#survey .formSurvey .row .form-control {
+#survey.form .formSurvey .row .form-control {
   font-size: 14px;
+}
+#survey.detail {
+  margin-top: 0;
+  width: 100%;
+}
+#survey.detail .otherSurvey .group .item {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+#survey.detail .otherSurvey .group .item:first-child {
+  border-top: none;
+}
+#survey.detail .otherSurvey .group .item .name {
+  display: block;
+  text-align: justify;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#survey.detail .otherSurvey .group .item .date {
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(0, 32, 77, 0.4);
+}
+#survey.detail .contentSurvey {
+  padding: 36px 24px;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #e0e0e0;
+}
+#survey.detail .contentSurvey .title {
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+#survey.detail .contentSurvey .description {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+#survey.detail .contentSurvey .item {
+  padding: 16px 0;
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#survey.detail .contentSurvey .item:first-child {
+  border-top: 1px solid #e0e0e0;
+}
+#survey.detail .contentSurvey .item .label {
+  width: 278px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+#survey.detail .contentSurvey .item .value {
+  flex: 1;
+}
+#survey.detail .contentSurvey .item .link {
+  color: #366ae2;
+}
+#survey.detail .resultSurvey {
+  margin-top: 24px;
+}
+#survey.detail .resultSurvey .title {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+#survey.detail .resultSurvey .description {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(0, 32, 77, 0.6);
+  margin-bottom: 24px;
+}
+#survey.detail .feedBack {
+  margin-top: 24px;
+}
+#survey.detail .feedBack .title {
+  text-transform: uppercase;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+#survey.detail .feedBack .group {
+  padding: 0 16px 36px 16px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+#survey.detail .feedBack .group .item {
+  padding: 16px 0;
+  border-top: 1px solid #e0e0e0;
+}
+#survey.detail .feedBack .group .item:first-child {
+  border-top: none;
+}
+#survey.detail .feedBack .group .item .name {
+  font-weight: 600;
+}
+#survey.detail .feedBack .group .item .status {
+  margin: 4px 0 8px 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(0, 32, 77, 0.6);
+}
+#survey.detail .feedBack .group .item .comment {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(0, 32, 77, 0.8);
+}
+#survey.detail .feedBack .group .pagging {
+  margin-top: 24px;
 }
 
 .voteStar {
@@ -2495,10 +2635,9 @@ footer .wrp .right .contact .statistical {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0;
   z-index: 2;
-  transition: 0.3s all ease-in-out;
+  display: none;
 }
 .voteStar span.active svg:nth-child(2) {
-  opacity: 1;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
