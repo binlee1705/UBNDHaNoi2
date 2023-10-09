@@ -1278,7 +1278,7 @@ header .wrp .logo .text {
   outline: none;
   flex: 1;
   background: transparent;
-  padding: 0 10px;
+  padding-left: 10px;
   width: 192px;
 }
 .menu .wrp .searchBox .btnSearch {
