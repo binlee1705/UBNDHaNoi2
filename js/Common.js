@@ -191,9 +191,14 @@ $(document).ready(() => {
     var pa = $(this).parents(".voteStar");
     var index = $(this).index() + 1;
     $(".voteStar span").removeClass("active");
-    for (var i = 0; i < index; i++) {
-      pa.find("span").eq(i).addClass("active");
-    }
+    $(".voteStar span").each(function () {
+      var indexTemp = $(this).index() + 1;
+      if (indexTemp > index) {
+        $(this).removeClass("active");
+      } else {
+        $(this).addClass("active");
+      }
+    })
   }, function () {
     var pa = $(this).parents(".voteStar");
     var index = pa.find(".starPoint").val();

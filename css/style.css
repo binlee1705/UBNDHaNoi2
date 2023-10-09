@@ -2630,14 +2630,14 @@ footer .wrp .right .contact .statistical {
 
 .voteStar {
   display: flex;
-  gap: 8px;
 }
 .voteStar span {
+  padding: 0 4px;
   position: relative;
 }
 .voteStar span svg:nth-child(2) {
   position: absolute;
-  left: 0;
+  left: 4px;
   top: 0;
   z-index: 2;
   display: none;
