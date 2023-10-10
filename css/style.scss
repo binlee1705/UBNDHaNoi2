@@ -152,6 +152,13 @@ header {
       display: flex;
     }
   }
+  &:not(.menuFoot) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+  }
   &.menuFoot {
     border-top: 1px solid #96cbfd;
     border-bottom: none;
