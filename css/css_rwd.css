@@ -202,8 +202,7 @@ img {
     background: #007ed9 !important;
     color: #fff !important;
   }
-  .menu .wrp .menuMain li:hover > ul,
-  .menu .wrp .menuMain li:hover .menuSub {
+  .menu .wrp .menuMain li:hover > ul {
     display: none;
   }
   .menu .wrp .menuMain li:hover > a {
@@ -232,6 +231,15 @@ img {
   }
   .menu .wrp .menuMain li ul li a > i {
     display: none;
+  }
+  .menu .wrp .menuMain li ul li ul {
+    display: block;
+  }
+  .menu .wrp .menuMain li ul li:hover > ul {
+    display: block;
+  }
+  .menu .wrp .menuMain li ul li:hover > a {
+    background: transparent;
   }
   .menu .wrp .menuMain.ac {
     left: 0;

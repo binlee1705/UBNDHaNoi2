@@ -146,8 +146,7 @@
             color: #fff !important;
           }
           &:hover {
-            > ul,
-            .menuSub {
+            > ul {
               display: none;
             }
 
@@ -177,6 +176,18 @@
                 border: none;
                 > i {
                   display: none;
+                }
+              }
+              ul {
+                display: block;
+              }
+              &:hover {
+                > ul {
+                  display: block;
+                }
+
+                > a {
+                  background: transparent;
                 }
               }
             }
