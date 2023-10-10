@@ -1552,6 +1552,7 @@ header .wrp .logo .text {
 }
 #galleryRight .group .item .image {
   position: relative;
+  display: block;
 }
 #galleryRight .group .item .image .icon {
   position: absolute;
