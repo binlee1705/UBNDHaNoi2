@@ -81,12 +81,12 @@ $(document).ready(() => {
     scrollHead(e);
   });
   $(".openList").click(() => {
-    $("#menu").toggleClass("ac");
+    $(".menu .menuMain").toggleClass("ac");
     $(".openList").toggleClass("ac");
     $("#overlay").fadeToggle();
   });
   $("#overlay").click(function () {
-    $("#menu").toggleClass("ac");
+    $(".menu .menuMain").toggleClass("ac");
     $(".openList").toggleClass("ac");
     $("#overlay").fadeToggle();
   });

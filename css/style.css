@@ -1289,16 +1289,7 @@ header .wrp .logo .text {
   justify-content: center;
 }
 .menu .wrp .language {
-  height: 32px;
-}
-.menu .wrp .language li {
-  background: #fff;
-}
-.menu .wrp .language li:not(.active) {
-  display: none;
-}
-.menu .wrp .language:hover li:not(.active) {
-  display: block;
+  display: flex;
 }
 .menu.menuFoot {
   border-top: 1px solid #96cbfd;

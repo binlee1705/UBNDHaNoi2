@@ -85,8 +85,112 @@
     }
   }
   .menu {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
     &.menuFoot {
       display: none;
+    }
+    .wrp {
+      .searchBox {
+        flex: 1;
+      }
+      .menuMain {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        overflow-y: auto;
+        background: #fff;
+        height: 100vh;
+        width: 80vw;
+        z-index: 21;
+        transition: 0.3s all ease-in-out;
+        display: block;
+        padding: ptr(20) 0;
+        transition: 0.3s all ease-in-out;
+        display: block;
+        &.active {
+          left: 0;
+        }
+        .openSub {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: ptr(50);
+          font-size: ptr(20);
+          &.ac {
+            i:before {
+              content: "\f106";
+            }
+          }
+        }
+        li {
+          display: flex;
+          padding: 0;
+          position: relative !important;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          a {
+            background: transparent !important;
+            display: flex;
+            padding: 7px 20px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            border-right: none;
+            flex: 1;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 14px;
+          }
+          &.active a {
+            background: $color-hover !important;
+            color: #fff !important;
+          }
+          &:hover {
+            > ul,
+            .menuSub {
+              display: none;
+            }
+
+            > a {
+              background: transparent;
+            }
+          }
+          ul {
+            text-transform: none;
+            visibility: visible;
+            opacity: 1;
+            pointer-events: all;
+            padding: 0;
+            padding-left: ptr(10);
+            transition: none;
+            height: auto;
+            display: none;
+            width: 100%;
+            position: static;
+            background: transparent;
+            box-shadow: none;
+            li {
+              a {
+                padding: 7px 16px;
+                white-space: normal;
+                font-weight: normal;
+                border: none;
+                > i {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        &.ac {
+          left: 0;
+        }
+      }
     }
   }
   #bttop {

@@ -141,8 +141,105 @@ img {
   #container.inside .wrp .container .colLeft {
     width: 72%;
   }
+  .menu {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+  }
   .menu.menuFoot {
     display: none;
+  }
+  .menu .wrp .searchBox {
+    flex: 1;
+  }
+  .menu .wrp .menuMain {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    background: #fff;
+    height: 100vh;
+    width: 80vw;
+    z-index: 21;
+    transition: 0.3s all ease-in-out;
+    display: block;
+    padding: 1.25rem 0;
+    transition: 0.3s all ease-in-out;
+    display: block;
+  }
+  .menu .wrp .menuMain.active {
+    left: 0;
+  }
+  .menu .wrp .menuMain .openSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.125rem;
+    font-size: 1.25rem;
+  }
+  .menu .wrp .menuMain .openSub.ac i:before {
+    content: "\f106";
+  }
+  .menu .wrp .menuMain li {
+    display: flex;
+    padding: 0;
+    position: relative !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .menu .wrp .menuMain li a {
+    background: transparent !important;
+    display: flex;
+    padding: 7px 20px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-right: none;
+    flex: 1;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .menu .wrp .menuMain li.active a {
+    background: #007ed9 !important;
+    color: #fff !important;
+  }
+  .menu .wrp .menuMain li:hover > ul,
+  .menu .wrp .menuMain li:hover .menuSub {
+    display: none;
+  }
+  .menu .wrp .menuMain li:hover > a {
+    background: transparent;
+  }
+  .menu .wrp .menuMain li ul {
+    text-transform: none;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    padding: 0;
+    padding-left: 0.625rem;
+    transition: none;
+    height: auto;
+    display: none;
+    width: 100%;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu .wrp .menuMain li ul li a {
+    padding: 7px 16px;
+    white-space: normal;
+    font-weight: normal;
+    border: none;
+  }
+  .menu .wrp .menuMain li ul li a > i {
+    display: none;
+  }
+  .menu .wrp .menuMain.ac {
+    left: 0;
   }
   #bttop {
     display: none !important;

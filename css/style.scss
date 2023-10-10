@@ -149,18 +149,7 @@ header {
     }
     .language {
       @extend %ul;
-      height: 32px;
-      li {
-        background: #fff;
-      }
-      li:not(.active) {
-        display: none;
-      }
-      &:hover {
-        li:not(.active) {
-          display: block;
-        }
-      }
+      display: flex;
     }
   }
   &.menuFoot {
