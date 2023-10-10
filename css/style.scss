@@ -238,6 +238,7 @@ header {
     width: percent(648, 984);
     .group {
       .item {
+        display: block;
         position: relative;
         &::before {
           content: "";

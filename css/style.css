@@ -1368,6 +1368,7 @@ header .wrp .logo .text {
   width: 65.8536585366%;
 }
 #newsHot .newsHot-left .group .item {
+  display: block;
   position: relative;
 }
 #newsHot .newsHot-left .group .item::before {
